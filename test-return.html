@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <title>TEST</title>
+ </head>
+ <body>
+  <div id="parent">
+   <a href="https://www.google.co.jp" id="children">click here</a>
+  </div>
+  <script>
+   $(function() {
+     $('#parent').on('click', function() {
+       alert('parent');
+     });
+     $('#children').on('click', function() {
+       alert('children');
+       return false;
+     });
+   }); 
+  </script>
+ </body>
+</html>
+
